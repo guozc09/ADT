@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "stack": "cpp",
+        "ostream": "cpp",
+        "deque": "cpp"
+    }
+}
