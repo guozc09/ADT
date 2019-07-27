@@ -2,20 +2,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
-            "type": "shell",
-            "command": "echo Hello"
-        },
-        {
             "type": "shell",
             "label": "g++.exe build active file",
             "command": "I:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
-                "${file}",
+                "h:\\Code\\Cpp\\ADT\\src\\stack_adt.cpp",
+                "h:\\Code\\Cpp\\ADT\\src\\rabbit_numbers.cpp",
+                "-I",
+                "h:\\Code\\Cpp\\ADT\\include",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\..\\stack_adt.exe"
             ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "options": {
                 "cwd": "I:\\cygwin64\\bin"
             }

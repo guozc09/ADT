@@ -2,6 +2,9 @@
 #include <stack>
 #include <vector>
 #include <deque>
+
+#include "rabbit_numbers.h"
+
 using namespace std;
 
 int main()
@@ -37,5 +40,10 @@ int main()
     }
     cout << endl;
 
+    int rabbits =  rabbitNumbers(10);
+
+    cout << "兔子数量为：" << rabbits << endl;
+
     return 0;
 }
+
