@@ -3,6 +3,7 @@
     "files.associations": {
         "stack": "cpp",
         "ostream": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "string": "cpp"
     }
 }

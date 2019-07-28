@@ -9,6 +9,7 @@
                 "-g",
                 "h:\\Code\\Cpp\\ADT\\src\\stack_adt.cpp",
                 "h:\\Code\\Cpp\\ADT\\src\\rabbit_numbers.cpp",
+                "h:\\Code\\Cpp\\ADT\\src\\arithmometer.cpp",
                 "-I",
                 "h:\\Code\\Cpp\\ADT\\include",
                 "-o",

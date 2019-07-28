@@ -4,6 +4,7 @@
 #include <deque>
 
 #include "rabbit_numbers.h"
+#include "arithmometer.h"
 
 using namespace std;
 
@@ -40,9 +41,12 @@ int main()
     }
     cout << endl;
 
-    int rabbits =  rabbitNumbers(10);
+    int rabbits = rabbitNumbers(10); //这里使用递归来进行计算兔子的数量，斐波那契数列
 
     cout << "兔子数量为：" << rabbits << endl;
+
+    string outExp = middleExp2SuffixExp("(2+3)*4 -6");
+    cout << outExp << endl;
 
     return 0;
 }
