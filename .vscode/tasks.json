@@ -7,13 +7,14 @@
             "command": "I:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
-                "h:\\Code\\Cpp\\ADT\\src\\stack_adt.cpp",
+                "h:\\Code\\Cpp\\ADT\\src\\main.cpp",
+                "h:\\Code\\Cpp\\ADT\\src\\linkList.cpp",
                 "h:\\Code\\Cpp\\ADT\\src\\rabbit_numbers.cpp",
                 "h:\\Code\\Cpp\\ADT\\src\\arithmometer.cpp",
                 "-I",
                 "h:\\Code\\Cpp\\ADT\\include",
                 "-o",
-                "${fileDirname}\\..\\stack_adt.exe"
+                "${fileDirname}\\..\\main.exe"
             ],
             "group": {
                 "kind": "build",

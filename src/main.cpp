@@ -1,17 +1,13 @@
 #include <iostream>
 #include <stack>
-#include <vector>
-#include <deque>
-
-#include "rabbit_numbers.h"
-#include "arithmometer.h"
-
+#include "linkList.h"
 using namespace std;
 
 int main()
 {
+#if 0
+    /* 栈的操作 */
     stack<int> first; //构造一个用于存放int类型的空栈(默认底层容器为deque)，size=0。
-
     deque<int> mydeque(3, 100); //构造一个包含3个int元素的双端队列
     stack<int> second(mydeque); //用自己的双端队列构造一个栈（size=3）
 
@@ -47,7 +43,17 @@ int main()
 
     string outExp = middleExp2SuffixExp("(2+3)*4 -6");
     cout << outExp << endl;
+#endif
 
+    /* 链表 */
+    doublelinks *doublelink_ptr = new doublelinks();
+    for (int i = 0; i < 10; i++)
+    {
+        doublelink_ptr->doublelink_insert(doublelink_ptr, 0, i);
+    }
+    doublelink_ptr->doublelink_insert(doublelink_ptr, 5, 22);
+    doublelink_ptr->doublelink_display(doublelink_ptr);
+    doublelink_ptr->doublelink_erase(doublelink_ptr, 5);
+    doublelink_ptr->doublelink_display(doublelink_ptr);
     return 0;
 }
-
