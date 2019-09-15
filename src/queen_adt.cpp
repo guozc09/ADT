@@ -14,7 +14,7 @@
 	*/
 using namespace std;
 
-int main(int argc, char *argv[])
+int queen_main(int argc, char *argv[])
 {
     queue<int> myQ;
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     }
     for (int i = 0, size = myQ.size(); i < size; i++)
     {
-        printf("myQ.size():%d\n", myQ.size());
+        printf("myQ.size():%d\n", (int)myQ.size());
         cout << myQ.front() << endl;
         myQ.pop();
     }
